@@ -17,5 +17,5 @@ class InteractiveRecord
     end
     column_names.compact
   end
-  # the purpose of this method is 
+  # the purpose of this method is draw out the hash of all
 end
