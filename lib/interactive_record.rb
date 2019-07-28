@@ -8,5 +8,7 @@ class InteractiveRecord
   # to create an abstract method that could be applied to any class and grab self (the class) name and change it into a string, downcase it and pluralize it because the table hold all the instance of the class object  eg. class Dog ==> dogs
   
   def self.column_names 
-    DB[:conn]
+    DB[:conn].results_as_hash = true
+    sql = "pragma table_info('#{table.name}'"
+    table_info = DB
 end
