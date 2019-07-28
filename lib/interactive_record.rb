@@ -16,4 +16,6 @@ class InteractiveRecord
       column_names << [row].name
     end
     column_names.compact
+  end
+  # the purpose of this method is 
 end
