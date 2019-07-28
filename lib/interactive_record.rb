@@ -17,5 +17,7 @@ class InteractiveRecord
     end
     column_names.compact
   end
-  # the purpose of this method is draw out the hash of all of row and then iterate through it row and declare the name of that row and saving it into the empty array that is equal into the variable 'column_names', the results is still in an form of a 
+  # the purpose of this method is draw out the hash of all of row and then iterate through it row and declare the name of that row and saving it into the empty array that is equal into the variable 'column_names', the results is still in an form of a key value pair and with the use of compact is to remove that relationship and to remove any residual nils 
+  
+  
 end
