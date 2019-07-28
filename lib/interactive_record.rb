@@ -50,9 +50,9 @@ class InteractiveRecord
 end
 
   def self.find_by_name(name)
-    sql = "SELECT * FROM #{self.table_name} WHERE name = '#{name}"
+    sql = "SELECT * FROM #{self.table_name} WHERE name = '#{name}' LIMIT 1"
     DB[:conn].execute(sql)
-  end
+  end.first
   
   
   def self.find_by(hash)
