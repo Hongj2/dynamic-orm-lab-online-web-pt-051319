@@ -54,4 +54,6 @@ end
     DB[:conn].execute(sql)
   end
   
+  def self.find_by(hash)
+   sql = "SELECT * FROM #{self.table_name} WHERE name = '#{name}'"
 end
