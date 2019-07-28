@@ -2,5 +2,11 @@ require_relative "../config/environment.rb"
 require 'active_support/inflector'
 
 class InteractiveRecord
+  def self.table_name 
+    self.to_s.downcase.pluralize 
+  end
+  # to create an abstract method that could be applied to any class and grab self (the class) name and change it into a string, downcase it and pluralize it because the table hold all the instance of the class object  eg. class Dog ==> dogs
   
+  def self.column_names 
+    DB[:conn]
 end
