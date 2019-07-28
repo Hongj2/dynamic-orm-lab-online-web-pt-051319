@@ -55,5 +55,6 @@ end
   end
   
   def self.find_by(hash)
-   sql = "SELECT * FROM #{self.table_name} WHERE name = '#{name}'"
+   sql = "SELECT * FROM #{self.table_name} WHERE #{hash.keys[0].to_s} ='#{hash.keys[0].to_s}'"
+ end
 end
